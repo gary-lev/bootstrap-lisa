@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+$primary:#1F4E6F;
+$light: #f2f2f2;
+$dark:#003931;
+
+$box-shadow:                  0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12) !default;
+$box-shadow-sm:               0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12) !default;
+$box-shadow-lg:               0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12) !default;
+
+$card-border-radius:                4px !default;
+$card-box-shadow:                   $box-shadow-sm !default;
+
+$component-active-bg: #4A7B9C;
+
+$font-family-sans-serif: 'Poppins', sans-serif !default;
+
+@import "~bootstrap/scss/bootstrap";
+@import "./svg.scss";
+
+html {
+  font-size: 14px;
+}
+
+h4, h5, h6,
+.h4, .h5, .h6 {
+  font-weight: bolder;
+}
+
+.btn-toolbar {
+  flex-direction: column !important;
+  margin: 1rem 0;
+  width: 100%;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.btn-toolbar > .btn {
+  margin-bottom: 1rem;
+  > .btn,
+  > .btn-group,
+  > .input-group {
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 576px) {
+  .btn-toolbar {
+    flex-direction: row !important;
+    > .btn,
+    > .btn-group,
+    > .input-group {
+      margin-left: .4rem;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+  .btn-toolbar > .btn {
+    margin-bottom: 0;
+  }
+}
+
+.card {
+  @extend .shadow-sm;
+}
+
+.card-header {
+  margin-bottom: 0;
+  .card-title {
+    @extend .h5;
+    margin-bottom: 0 !important;
+    font-weight: normal;
+  }
+}
