@@ -22,7 +22,7 @@ $orange:  #ffa200 !default;
 $yellow:  hsl(43, 100%, 54%) !default;
 $green:   hsl(93, 33%, 53%) !default;
 $teal:    #008489 !default;
-$cyan:    hsl(210, 39%, 38%) !default;
+$cyan:    #377ABD !default; //hsl(210, 39%, 38%)
 
 $primary:       $cyan;
 $secondary:     hsl(209, 31%, 62%);
@@ -45,11 +45,28 @@ $brand-danger:              $red !default;
 $brand-inverse:             $gray-dark !default;
 
 $body-bg:                   $gray-300 !default;
+$body-color:                #373675 !default;
 $box-shadow:                  0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12) !default;
 $box-shadow-sm:               0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12) !default;
 $box-shadow-lg:               0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12) !default;
 
+$badge-padding-y:             .28rem !default;
+$badge-padding-x:             .71rem !default;
+$badge-font-size:             .71rem !default;
+$badge-font-weight:           500 !default;
+
 $btn-border-width:            1px !default;
+$btn-box-shadow:              none !default;
+$btn-font-size:               0.875rem !default;
+$btn-line-height:             1 !default;
+$btn-outline-padding-top:     .71rem !default;
+$btn-outline-padding-bottom:  .71rem !default;
+$btn-outline-padding-left:    .71rem !default;
+$btn-outline-padding-right:   .71rem !default;
+$btn-padding-left:            .71rem !default;
+$btn-padding-right:           .71rem !default;
+$btn-padding-top:             .71rem !default;
+$btn-padding-bottom:          .71rem !default;
 
 $card-border-radius:          4px !default;
 $card-box-shadow:             $box-shadow-sm !default;
@@ -58,8 +75,18 @@ $card-cap-padding-y:          1.14rem !default;
 $card-spacer-x:               1.14rem !default;
 $card-spacer-y:               1.14rem !default; 
 
+$form-label-color:            $body-color !default;
+
+$input-bg:                  #FFF !default;
+
 $list-group-item-padding-y:   1.14rem !default; 
-$list-group-item-padding-x:   1.14rem !default; 
+$list-group-item-padding-x:   1.14rem !default;
+
+$nav-tabs-link-active-bg:     #FFF !default;
+
+$table-color:                $body-color !default;
+$table-hover-bg:             hsla(223, 100%, 95%, 0.25) !default;
+$table-th-font-weight:       700 !default;
 
 $font-family-sans-serif:    'Open Sans', sans-serif !default;
 $font-family-roboto:        'Open Sans', sans-serif !default;
@@ -74,6 +101,14 @@ $font-family-roboto:        'Open Sans', sans-serif !default;
 
 html {
   font-size: 14.4px;
+}
+
+.badge {
+  text-transform: uppercase;
+}
+
+.btn {
+  text-transform: none;
 }
 
 // flex-column
@@ -138,4 +173,8 @@ html {
     margin-bottom: 0 !important;
     font-weight: normal;
   }
+}
+
+.table th {
+  font-weight: $table-th-font-weight;
 }
