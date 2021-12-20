@@ -83,7 +83,7 @@ $card-cap-padding-y:          1.14rem !default;
 $card-spacer-x:               1.14rem !default;
 $card-spacer-y:               1.14rem !default; 
 
-$form-label-color:            $body-color !default;
+$form-label-color:            #647494 !default;
 
 $input-bg:                  #FFF !default;
 
@@ -174,11 +174,11 @@ html {
 }
 
 .card-header {
-  border-bottom: none;
   margin-bottom: 0;
   .card-title {
     @extend .h5;
     margin-bottom: 0 !important;
+    font-size: 1.14rem;
     font-weight: normal;
   }
 }
