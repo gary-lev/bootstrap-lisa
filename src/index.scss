@@ -113,6 +113,10 @@ html {
 
 .badge {
   text-transform: uppercase;
+
+  &.bg-light {
+    color: $body-color;
+  }
 }
 
 .btn {
@@ -161,14 +165,6 @@ html {
   box-shadow: none;
 }
 
-.card-body + .card-footer {
-  padding-top: 0;
-}
-
-.card-header + .card-body {
-  padding-top: 0;
-}
-
 .card-footer {
   border-top: none;
 }
@@ -181,6 +177,11 @@ html {
     font-size: 1.14rem;
     font-weight: normal;
   }
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  color: #211E3C;
 }
 
 .table th {

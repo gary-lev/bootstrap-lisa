@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "dist": "webpack",
-    "docs": "webpack; cp dist/bootstrap-lisa.css docs",
+    "docs": "webpack; cp dist/*.* docs",
     "lint": "sass-lint 'src/index.scss' --verbose --no-exit",
     "test": "npm run dist; npm run lint",
     "version": "npm run docs && git add -A dist docs",
