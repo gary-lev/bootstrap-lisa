@@ -184,6 +184,16 @@ h1, h2, h3, h4, h5, h6,
   color: #211E3C;
 }
 
+.input-group-text {
+  background-color: $input-bg;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.input-group .form-select {
+  padding: 0.24rem 2.25rem 0.24rem 0.75rem;
+}
+
 .table th {
   font-weight: $table-th-font-weight;
 }
